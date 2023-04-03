@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Design of Dreams</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="icon" href="Images/logo.png">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -26,9 +27,9 @@
     </div>
 
 
-    <div class="deals">
+    <div class="deals" data-aos="fade-up">
         <h1>Deals in:-</h1>
-        <div> 
+        <div data-aos="flip-up"> 
             <h2>Interior Design / Renovational Ideas</h2>
             <div class="items">
                 <img src="Images/id1.png" alt="">
@@ -45,7 +46,7 @@
             </div>
         </div>
 
-        <div>
+        <div data-aos="flip-down">
             <h2>Building Plans / Architectural Design(2D & 3D)</h2>
             <div class="items">
                 <img src="Images/ad1.jpeg" alt="">
@@ -70,8 +71,14 @@
          <p class="next">All rights reserved.</p></p>
         <p>Made with <i class="heart fa-regular fa-heart"></i>  by Ansar Ali</p>
     </footer>
-
-
     <script src="script.js"></script>
+    <!-- our aos data -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 1000,
+      });
+    </script>
 </body>
 </html>
